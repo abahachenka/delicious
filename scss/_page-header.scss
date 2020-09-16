@@ -1,0 +1,156 @@
+.page-header {
+    background-color: rgba(255, 127, 127, 0.75);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 120;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 $contentSpacing;
+        height: $containerHeightMobile;
+
+        @media screen and (min-width: $tablet) {
+            height: $containerHeightTablet;
+        }
+
+        @media screen and (min-width: $desktop) {
+            height: $containerHeightDesktop;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            height: $containerHeightLargeDesktop;
+        }
+    }
+
+    &__col-right {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    &__burger {
+        width: 3em;
+        height: 2.5em;
+        position: relative;
+        display: inline-block;
+        text-align: right;
+        margin-left: 2.5em;
+
+        &:before,
+        &:after {
+            content: '';
+            background: $white;
+            display: block;
+            height: 0.2em;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            transition: all 0.3s ease 0s;
+        }
+
+        &:before {
+            top: 0;
+        }
+
+        &:after {
+            bottom: 0; 
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            background-color: $white;
+            height: 0.2em;
+            position: absolute;
+            left: 0;
+            top: 1.2em;
+            transition: all 0.3s ease 0s;
+        }
+
+        &-active {
+            &:before {
+                transform: rotate(45deg);
+                top: 1.3em;
+            }
+            &:after {
+                transform: rotate(-45deg);
+                top: 1.3em;
+            }
+            span {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        position: fixed;
+        background-color: $white;
+        height: 0;
+        width: 100%;
+        top: $containerHeightMobile;
+        left: 0;
+        padding: 0 $contentSpacing;
+        transition: all 0.3s ease 0s;
+        overflow: hidden;
+
+        &-active {
+            height: 100%;
+        }
+
+        @media screen and (min-width: $tablet) {
+            transition: none;
+            width: auto;
+            position: relative;
+            height: auto;
+            background: transparent;
+            justify-self: center;
+            display: flex;
+            padding: 0;
+            top: 0;
+        }
+
+        @media screen and (min-width: $desktop) {
+        }
+    }
+
+    &__link {
+        color: $apricot;
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        font-size: 1.8em;
+        margin: $contentSpacing 0 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (min-width: $tablet) {
+            color: $white;
+            font-size: 2em;
+            font-weight: 700;
+            margin: 0 1.5em 0 0; // 30px
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 2.5em;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            margin-right: 2.4em; // 60px
+        }
+    }
+}

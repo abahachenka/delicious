@@ -1,0 +1,21 @@
+.logo {
+    display: inline-block;
+    width: 6em;
+    transition: all 0.3s ease 0s;
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 7em;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 8em;
+    }
+
+    @media screen and (min-width: $l-desktop) {
+        width: 10.7em;
+    }
+}

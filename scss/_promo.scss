@@ -1,0 +1,44 @@
+.promo {
+    background: url(../img/promo-bg.png) no-repeat top left;
+    background-size: cover;
+    height: 1095px;
+
+    &__container {
+        color: $white;
+    }
+
+    &__title {
+        width: 5.8em; //435px
+        margin: 3.5em 0 0.5em; //265px 0 40px
+
+        font-size: 7.5em; //75px
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        width: 19em; //580px
+        margin: 0.5em 0 1.6em; // 40px 0 50px
+
+        font-size: 3em; // 30px
+    }
+
+    // &__action {
+    //     display: inline-block;
+    //     padding: 1em 3em 0.92em; // 25px 75px 23px
+        
+    //     color: $apricot;
+    //     font-size: 2.5em; // 25px
+    //     font-weight: bold;
+    //     text-transform: uppercase;
+    //     text-decoration: none;
+
+    //     background: $white;
+    //     border-radius: 1.6em; // 40px
+
+    //     &:hover {
+    //         background: $apricot;
+    //         color: $white;
+    //     }
+    // }
+}

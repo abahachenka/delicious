@@ -1,0 +1,37 @@
+$fontFamiyDefault: 'Montserrat', sans-serif;
+$fontSizeDefault: 0.625em; // 10px for easy calculations
+
+
+$headerMaxWidth: 1375px;
+$contentMaxWidth: 1300px;
+
+
+// Paddings, margins
+$contentSpacing: 20px;
+
+
+//Colors
+$white: #ffffff;
+$apricot: #ff7f7f;
+$silver: #cccccc;
+$dusty-gray: #999999;
+$scorpion: #585858;
+$black: #000000;
+
+
+// Breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 992px;
+$l-desktop: 1200px;
+
+
+// page-header__container
+$containerHeightMobile: 7em;
+$containerHeightTablet: 9em;
+$containerHeightDesktop: 10em;
+$containerHeightLargeDesktop: 13em;
+
+
+// search
+$searchFieldHeight: 3.5rem;

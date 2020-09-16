@@ -1,0 +1,75 @@
+.search {
+    &__button {
+        height: 2.5rem;
+        width: 2.5rem;
+        background: url(../img/search.png) no-repeat center;
+        background-size: 100%;
+        border: 0;
+        display: block;
+
+        @media screen and (min-width: $desktop) {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+
+    &__input-wrapper {
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease 0s;
+        background: $white;
+        width: 100%;
+        top: $containerHeightMobile;
+        padding: 0 $contentSpacing;
+        height: 0;
+        overflow: hidden;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+    }
+
+    &_active {
+        .search__input-wrapper {
+            height: 80px;
+        }
+    }
+
+    &__form {
+        position: relative;
+        width: 100%;
+    }
+
+    &__input,
+    &__submit {
+        height: $searchFieldHeight;
+        font-size: 1.6em;
+    }
+
+    &__input {
+        padding: 0.5rem 10rem 0.5rem 0.5rem;
+        width: 100%;
+        border: 0.1rem solid $dusty-gray;
+        border-radius: 0.3rem;
+    }
+
+    &__submit {
+        padding: 0 $contentSpacing;
+        background: $white;
+        color: $scorpion;
+        border: 0.1rem solid $dusty-gray;
+        border-radius: 0 0.3rem 0.3rem 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+
+        &:hover {
+            color: $black;
+        }
+    }
+}
