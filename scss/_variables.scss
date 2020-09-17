@@ -22,16 +22,17 @@ $black: #000000;
 // Breakpoints
 $mobile: 320px;
 $tablet: 768px;
-$desktop: 992px;
+$desktop: 1024px;
 $l-desktop: 1200px;
 
 
 // page-header__container
-$containerHeightMobile: 7em;
-$containerHeightTablet: 9em;
-$containerHeightDesktop: 10em;
-$containerHeightLargeDesktop: 13em;
+$headerHeightMobile: 7em;
+$headerHeightTablet: 9em;
+$headerHeightDesktop: 10em;
+$headerHeightLargeDesktop: 13em;
 
 
 // search
 $searchFieldHeight: 3.5rem;
+$searchFormHeight: 8rem;

@@ -1,4 +1,6 @@
 .search {
+    z-index: 30;
+
     &__button {
         height: 2.5rem;
         width: 2.5rem;
@@ -6,6 +8,11 @@
         background-size: 100%;
         border: 0;
         display: block;
+
+        @media screen and (min-width: $tablet) {
+            height: 2.3rem;
+            width: 2.3rem;
+        }
 
         @media screen and (min-width: $desktop) {
             height: 2.5rem;
@@ -18,24 +25,37 @@
         }
     }
 
-    &__input-wrapper {
+    &__form-wrapper {
         position: absolute;
         left: 0;
         transition: all 0.3s ease 0s;
         background: $white;
         width: 100%;
-        top: $containerHeightMobile;
+        top: $headerHeightMobile;
         padding: 0 $contentSpacing;
         height: 0;
         overflow: hidden;
         z-index: 5;
         display: flex;
         align-items: center;
+
+        @media screen and (min-width: $tablet) {
+            top: $headerHeightTablet;
+        }
+
+        @media screen and (min-width: $desktop) {
+            top: $headerHeightDesktop;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            top: $headerHeightLargeDesktop;
+        }
     }
 
+    // search_active
     &_active {
-        .search__input-wrapper {
-            height: 80px;
+        .search__form-wrapper {
+            height: $searchFormHeight;
         }
     }
 
@@ -55,6 +75,11 @@
         width: 100%;
         border: 0.1rem solid $dusty-gray;
         border-radius: 0.3rem;
+        outline: none;
+
+        &:focus {
+            box-shadow: 0 0 5px $apricot;
+        }
     }
 
     &__submit {
