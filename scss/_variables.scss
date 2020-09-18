@@ -7,7 +7,7 @@ $contentMaxWidth: 1300px;
 
 
 // Paddings, margins
-$contentSpacing: 20px;
+$contentSpacing: 2rem;
 
 
 //Colors
@@ -19,6 +19,10 @@ $scorpion: #585858;
 $black: #000000;
 
 
+//Hamburger
+$burgerLineWidth: 0.3em;
+
+
 // Breakpoints
 $mobile: 320px;
 $tablet: 768px;
@@ -27,7 +31,7 @@ $l-desktop: 1200px;
 
 
 // page-header__container
-$headerHeightMobile: 7em;
+$headerHeightMobile: 9em;
 $headerHeightTablet: 9em;
 $headerHeightDesktop: 10em;
 $headerHeightLargeDesktop: 13em;

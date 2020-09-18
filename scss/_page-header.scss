@@ -1,5 +1,5 @@
 .page-header {
-    background-color: rgba(255, 127, 127, 0.75);
+    background-color: rgba(255, 127, 127, 0.85);
     position: fixed;
     width: 100%;
     top: 0;
@@ -51,7 +51,7 @@
             content: '';
             background: $white;
             display: block;
-            height: 0.2em;
+            height: $burgerLineWidth;
             width: 100%;
             position: absolute;
             left: 0;
@@ -70,10 +70,10 @@
             display: block;
             width: 100%;
             background-color: $white;
-            height: 0.2em;
+            height: $burgerLineWidth;
             position: absolute;
             left: 0;
-            top: 1.2em;
+            top: 1.1em;
             transition: all 0.3s ease 0s;
         }
 
@@ -135,8 +135,8 @@
         text-transform: uppercase;
         text-decoration: none;
         display: block;
-        font-size: 1.8em;
-        margin: $contentSpacing 0 0;
+        font-size: 2.3em;
+        margin: 1em 0 0;
 
         &:hover {
             text-decoration: underline;
