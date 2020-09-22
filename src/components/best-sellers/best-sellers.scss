@@ -9,6 +9,15 @@
 
     @media screen and (min-width: $desktop) {
         margin-top: -8em;
+        background-image: url(../img/rice.png), url(../img/caviar.png);
+        background-repeat: no-repeat;
+        background-position: 0 30%, 99% 22%;
+        background-size: 8%;
+    }
+
+    @media screen and (min-width: $l-desktop) {
+        background-size: auto;
+        background-position: 0 35%, 99% 25%;
     }
 
     // .best-sellers__title
@@ -83,6 +92,11 @@
     @media screen and (min-width: $tablet) {
         flex-direction: row;
         justify-content: center;
+        margin: 3em auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin: 5em auto;
     }
 
     // .product-list__column
@@ -92,17 +106,25 @@
         margin: 0 0 2em; // 20px
 
         @media screen and (min-width: $tablet) {
-            margin: 0 10% 0 0;
+            margin: 0 5% 0 0;
 
             &:last-child {
                 margin: 0;
             }
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            margin: 0 8% 0 0;
         }
     }
 
     // .product-list__item-pic
     &__item-pic {
         width: 100%;
+
+        @media screen and (min-width: $desktop) {
+            width: 80%;
+        }
     }
 
     // .product-list__item-name
