@@ -1,0 +1,146 @@
+.best-sellers {
+    color: $white;
+    text-align: center;
+    margin-top: -8em;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: -9em;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: -8em;
+    }
+
+    // .best-sellers__title
+    &__title {}
+
+    // .best-sellers__description
+    &__description {
+        max-width: 25em;
+
+        @media screen and (min-width: $tablet) {
+            max-width: 30em;
+        }
+
+        @media screen and (min-width: $desktop) {
+            max-width: 28em; // 700px
+        }
+    }
+
+    // .best-sellers__list
+    &__list {
+        @media screen and (min-width: $desktop) {
+            margin-top: 8em;
+        }
+    }
+}
+
+.section {
+
+    // .section__title
+    &__title {
+        text-transform: uppercase;
+        font-size: 3em; // 30px
+        margin: 0 0 0.8em;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 3.5em;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 4.5em;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            font-size: 5.8em;
+        }
+    }
+
+    // .section__description
+    &__description {
+        margin: 0 auto;
+        font-size: 1.5em;
+        line-height: 1.5;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 1.8em;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 2.5em;
+        }
+    }
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    // .product-list__column
+    &__column {
+        text-align: center;
+        max-width: 30em; // 300px
+        margin: 0 0 2em; // 20px
+
+        @media screen and (min-width: $tablet) {
+            margin: 0 10% 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    // .product-list__item-pic
+    &__item-pic {
+        width: 100%;
+    }
+
+    // .product-list__item-name
+    &__item-name {
+        font-size: 1.8em;
+        margin: -0.5em 0 1em;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 2.3em; // 23px
+            margin: 0 0 0.65em; // 15px
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 2.8em;
+        }
+    }
+
+    // .product-list__item-link
+    &__item-link {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .product-list__item-description
+    &__item-description {
+        font-size: 1.2em;
+        line-height: 1.5;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 1.5em;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 1.7em;
+        }
+    }
+}
