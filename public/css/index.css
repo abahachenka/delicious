@@ -28,7 +28,6 @@ body.lock {
 }
 
 .page-content {
-  background-color: #ff7f7f;
   flex: 1 1 auto;
   min-height: 100vh;
 }
@@ -402,27 +401,36 @@ body.lock {
 }
 
 .promo {
-  min-height: 100vh;
-  background-image: url(../img/promo-bg.png);
-  background-color: #ff7f7f;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+  background: #ff7f7f url(../img/promo-bg.png) center/cover no-repeat;
+  padding-bottom: 20em;
+}
+@media screen and (min-width: 768px) {
+  .promo {
+    padding-bottom: 29em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .promo {
+    padding-bottom: 32em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promo {
+    padding-bottom: 35em;
+  }
 }
 .promo__container {
+  min-height: 100vh;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  align-items: start;
   padding-top: 12em;
-  padding-bottom: 22em;
 }
 @media screen and (min-width: 768px) {
   .promo__container {
     padding-right: 45%;
-    padding-bottom: 35em;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -474,23 +482,14 @@ body.lock {
     margin: 0 0 1.5em;
   }
 }
-.promo__action {
-  max-width: 28rem;
-}
-
 .best-sellers {
   color: #ffffff;
   text-align: center;
-  margin-top: -8em;
-}
-@media screen and (min-width: 768px) {
-  .best-sellers {
-    margin-top: -9em;
-  }
+  margin-top: -14em;
 }
 @media screen and (min-width: 1024px) {
   .best-sellers {
-    margin-top: -8em;
+    margin-top: -10em;
     background-image: url(../img/rice.png), url(../img/caviar.png);
     background-repeat: no-repeat;
     background-position: 0 30%, 99% 22%;
@@ -613,8 +612,7 @@ body.lock {
 }
 
 .best-tasty {
-  background: #ffffff url(../img/wave.png) bottom left no-repeat;
-  background-size: contain;
+  background: #ffffff url(../img/wave.png) bottom left/contain no-repeat;
   color: #ff7f7f;
 }
 .best-tasty__container {

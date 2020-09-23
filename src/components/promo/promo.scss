@@ -1,25 +1,31 @@
 .promo {
-    min-height: 100vh;
-    background-image: url(../img/promo-bg.png);
-    background-color: $apricot;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+    background: $apricot url(../img/promo-bg.png) center/cover no-repeat;
+    padding-bottom: 20em;
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 29em;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 32em;
+    }
+
+    @media screen and (min-width: $l-desktop) {
+        padding-bottom: 35em;
+    }
 
     // .promo__container
     &__container {
+        min-height: 100vh;
         color: $white;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-height: 100vh;
+        align-items: start;
         padding-top: $headerHeightMobile + 3em;
-        padding-bottom: 22em;
 
         @media screen and (min-width: $tablet) {
             padding-right: 45%;
-            padding-bottom: 35em;
         }
 
         @media screen and (min-width: $desktop) {
@@ -71,6 +77,6 @@
 
     // .promo__action
     &__action {
-        max-width: 28rem; ///????
+        // max-width: 28rem; ///????
     }
 }

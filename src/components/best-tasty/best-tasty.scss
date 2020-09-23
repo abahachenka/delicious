@@ -1,6 +1,5 @@
 .best-tasty {
-    background: $white url(../img/wave.png) bottom left no-repeat;
-    background-size: contain;
+    background: $white url(../img/wave.png) bottom left/contain no-repeat;
     color: $apricot;
 
     // .best-tasty__container
