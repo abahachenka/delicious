@@ -801,6 +801,103 @@ body.lock {
   }
 }
 
+.delicious {
+  background-color: #ffffff;
+  color: #ff7f7f;
+  position: relative;
+}
+.delicious__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .delicious__bg {
+    top: -3em;
+    background-image: url(../img/ebi.png), url(../img/sake.png), url(../img/rice.png), url(../img/caviar.png);
+    background-repeat: no-repeat;
+    background-position: 3% 15%, 97% 11%, 47% 93%, 52% 0;
+    background-size: 8%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .delicious__bg {
+    top: -7em;
+    background-position: 3% 15%, 97% 18%, 47% 93%, 52% 0;
+    background-size: auto;
+  }
+}
+.delicious__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .delicious__container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .delicious__container {
+    padding-top: 12em;
+    padding-bottom: 10em;
+  }
+}
+.delicious__pic, .delicious__content {
+  flex-basis: 50%;
+  text-align: center;
+}
+.delicious__pic img {
+  width: 75%;
+  max-width: 22em;
+}
+@media screen and (min-width: 768px) {
+  .delicious__pic img {
+    width: 90%;
+    max-width: 46.5em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .delicious__content {
+    text-align: left;
+    padding-right: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.delicious__title {
+  margin-top: 1em;
+}
+@media screen and (min-width: 768px) {
+  .delicious__title {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .delicious__description {
+    margin: 0;
+    width: auto;
+  }
+}
+.delicious__action {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .delicious__action {
+    margin-top: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .delicious__action {
+    margin-top: 5rem;
+  }
+}
+
 .page-footer {
   background: black;
   flex: 0 0 50px;
