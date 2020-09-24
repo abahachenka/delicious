@@ -1,0 +1,45 @@
+.review {
+    text-align: center;
+    background: url(../img/review-bg.png) center/cover no-repeat;
+    color: $white;
+
+    // .review__pic
+    &__pic {
+        width: 75%;
+        max-width: 22em;
+        vertical-align: top;
+
+        @media screen and (min-width: $tablet) {
+            width: 24em;
+            max-width: none;
+        }
+    }
+
+    // .review__text
+    &__text {
+        margin-top: 1.5em;
+
+        @media screen and (min-width: $l-desktop) {
+            font-size: 3.3em;
+        }
+    }
+
+    // .review__name
+    &__name {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin: 1em 0 0;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 3em;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 4em;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            font-size: 4.5em;
+        }
+    }
+}

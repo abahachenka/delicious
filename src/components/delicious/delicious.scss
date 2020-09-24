@@ -9,6 +9,7 @@
         right: 0;
         left: 0;
         bottom: 0;
+        z-index: 50;
         
         @media screen and (min-width: $tablet) {
             top: -3em;
@@ -17,12 +18,12 @@
                 url(../img/rice.png),
                 url(../img/caviar.png);
             background-repeat: no-repeat;
-            background-position: 3% 15%, 97% 11%, 47% 93%, 52% 0;
+            background-position: 3% 15%, 97% 11%, 47% 93%, 54% 0;
             background-size: 8%;
         }
 
         @media screen and (min-width: $desktop) {
-            top: -7em;
+            top: -6em;
             background-position: 3% 15%, 97% 18%, 47% 93%, 52% 0;
             background-size: auto;
         }
@@ -30,11 +31,12 @@
 
     // .delicious__container
     &__container { 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        z-index: 70;
+        position: relative;
+        text-align: center;
 
         @media screen and (min-width: $tablet) {
+            display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
         }
