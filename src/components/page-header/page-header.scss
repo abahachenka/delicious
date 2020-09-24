@@ -279,48 +279,4 @@
             box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.2);
         }
     }
-
-    // .search__form
-    &__form {
-        position: relative;
-        width: 100%;
-    }
-
-    // .search__input,
-    // .search__submit
-    &__input,
-    &__submit {
-        height: $searchFieldHeight;
-        font-size: 1.6em;
-    }
-
-    // .search__input
-    &__input {
-        padding: 0.5rem 10rem 0.5rem 0.5rem;
-        width: 100%;
-        border: 0.1rem solid $dusty-gray;
-        border-radius: 0.3rem;
-        outline: none;
-
-        &:focus {
-            box-shadow: 0 0 5px $apricot;
-        }
-    }
-
-    // .search__submit
-    &__submit {
-        padding: 0 $contentSpacing;
-        background: $white;
-        color: $scorpion;
-        border: 0.1rem solid $dusty-gray;
-        border-radius: 0 0.3rem 0.3rem 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: inline-block;
-
-        &:hover {
-            color: $black;
-        }
-    }
 }

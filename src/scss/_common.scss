@@ -36,18 +36,18 @@ body {
 .container {
     margin: auto;
     max-width: $contentMaxWidth;
-    padding: 4em $contentSpacing;
+    padding: 6em $contentSpacing;
 
     @media screen and (min-width: $tablet) {
-        padding: 6em $contentSpacing;
-    }
-
-    @media screen and (min-width: $desktop) {
         padding: 8em $contentSpacing;
     }
 
+    @media screen and (min-width: $desktop) {
+        padding: 11em $contentSpacing;
+    }
+
     @media screen and (min-width: $l-desktop) {
-        padding: 9em $contentSpacing;
+        padding: 14em $contentSpacing;
     }
 }
 
@@ -120,6 +120,66 @@ body {
 
     @media screen and (min-width: $l-desktop) {
         font-size: 3em;
+    }
+}
+
+.form {
+    &__input,
+    &__submit {
+        font-size: 1.6em;
+        border-radius: 1.875em; //30px
+        border: none;
+        height: 2.5em; // 40px
+
+        @media screen and (min-width: $tablet){
+            font-size: 2em;
+        }
+
+        @media screen and (min-width: $desktop){
+            font-size: 2.3em;
+        }
+
+        @media screen and (min-width: $l-desktop){
+            font-size: 2.5em;
+        }
+    }
+
+    &__input {
+        outline: none;
+        background-color: $sand;
+
+        &:focus {
+            box-shadow: 0 0 0.3em $apricot; //5px
+        }
+    }
+
+    &__submit {
+        padding: 0.125em 1.5em 0; //2px 
+        background: $apricot;
+        text-transform: uppercase;
+        color: $white;
+        line-height: 1;
+        vertical-align: middle;
+
+        &:hover {
+            color: $apricot;
+            background: $white;
+        }
+    }
+
+    &_single-field {
+        position: relative;
+
+        .form__input {
+            padding: 0.3em 9em 0.3em 0.9em;
+            width: 100%;
+        }
+
+        .form__submit {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     }
 }
 

@@ -1,0 +1,46 @@
+.subscribe {
+    color: $apricot;
+    background-image: url(../img/corner-left.png), 
+        url(../img/corner-right.png),
+        url(../img/wave-black.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0, 0 100%;
+    background-size: 30%, 30%, contain;
+    background-color: $white;
+    text-align: center;
+
+    &__container {
+        padding-bottom: 11em;
+
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 18em;
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding-bottom: 22em;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            padding-bottom: 30em;
+        }
+    }
+
+    &__form {
+        margin: 3em auto 0;
+        max-width: 40em;
+
+        @media screen and (min-width: $tablet) {
+            margin-top: 5em;
+            max-width: 50em;
+        }
+
+        @media screen and (min-width: $desktop) {
+            max-width: 60em;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            margin-top: 6em;
+            max-width: 66em;
+        }
+    }
+}
