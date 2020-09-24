@@ -22,6 +22,7 @@ body.lock {
 }
 
 .wrapper {
+  background: #ff7f7f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -82,38 +83,42 @@ body.lock {
   background: #EE6D6D;
 }
 
-.section__title {
+.section-title {
   text-transform: uppercase;
   font-size: 3em;
   margin: 0 0 0.8em;
 }
 @media screen and (min-width: 768px) {
-  .section__title {
+  .section-title {
     font-size: 4em;
   }
 }
 @media screen and (min-width: 1024px) {
-  .section__title {
+  .section-title {
     font-size: 5em;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section__title {
+  .section-title {
     font-size: 5.8em;
   }
 }
-.section__description {
+
+.section-description {
   margin: 0 auto;
   font-size: 1.5em;
   line-height: 1.5;
+  max-width: 28em;
 }
 @media screen and (min-width: 768px) {
-  .section__description {
+  .section-description {
     font-size: 1.8em;
+    width: 70%;
+    max-width: 66em;
   }
 }
 @media screen and (min-width: 1024px) {
-  .section__description {
+  .section-description {
     font-size: 2.5em;
   }
 }
@@ -485,7 +490,7 @@ body.lock {
 .best-sellers {
   color: #ffffff;
   text-align: center;
-  margin-top: -14em;
+  margin-top: -13em;
 }
 @media screen and (min-width: 1024px) {
   .best-sellers {
@@ -504,19 +509,6 @@ body.lock {
 }
 .best-sellers__container {
   padding-top: 0;
-}
-.best-sellers__description {
-  max-width: 25em;
-}
-@media screen and (min-width: 768px) {
-  .best-sellers__description {
-    max-width: 30em;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .best-sellers__description {
-    max-width: 28em;
-  }
 }
 @media screen and (min-width: 1024px) {
   .best-sellers__list {
@@ -663,16 +655,17 @@ body.lock {
   }
 }
 .best-tasty__title {
-  margin-top: 3rem;
+  margin-top: 1em;
 }
 @media screen and (min-width: 768px) {
   .best-tasty__title {
-    margin: 0 0 3rem;
+    margin-top: 0;
   }
 }
-@media screen and (min-width: 1024px) {
-  .best-tasty__title {
-    margin: 0 0 4rem;
+@media screen and (min-width: 768px) {
+  .best-tasty__description {
+    margin: 0;
+    width: auto;
   }
 }
 .best-tasty__action {
@@ -686,6 +679,125 @@ body.lock {
 @media screen and (min-width: 1024px) {
   .best-tasty__action {
     margin-top: 5rem;
+  }
+}
+
+.statistics {
+  color: #ffffff;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .statistics {
+    background-image: url(../img/shrimp.png), url(../img/roll.png);
+    background-repeat: no-repeat;
+    background-position: 5% 30%, 97% 22%;
+    background-size: 8%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .statistics {
+    background-size: auto;
+    background-position: 5% 25%, 98% 10%;
+  }
+}
+.statistics__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-weight: bold;
+  margin: 3.5em 0 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .statistics__list {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .statistics__list {
+    margin-top: 6em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .statistics__list {
+    margin: 9.5em 0 0;
+  }
+}
+.statistics__item {
+  text-transform: uppercase;
+  height: 25vw;
+  width: 25vw;
+  max-width: 12em;
+  max-height: 12em;
+  border: 0.3em solid #ffffff;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5vw;
+}
+.statistics__item:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .statistics__item {
+    margin-right: 7vw;
+    border-width: 0.4em;
+    max-height: 17em;
+    max-width: 17em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .statistics__item {
+    border-width: 0.5em;
+    height: 20em;
+    width: 20em;
+    max-height: none;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .statistics__item {
+    height: 27.5em;
+    width: 27.5em;
+    margin-right: 14em;
+  }
+}
+.statistics__count {
+  font-size: 2em;
+}
+@media screen and (min-width: 768px) {
+  .statistics__count {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .statistics__count {
+    font-size: 5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .statistics__count {
+    font-size: 7.5em;
+  }
+}
+.statistics__label {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 768px) {
+  .statistics__label {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .statistics__label {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .statistics__label {
+    font-size: 4.2em;
   }
 }
 

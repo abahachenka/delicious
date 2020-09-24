@@ -1,7 +1,7 @@
 .best-sellers {
     color: $white;
     text-align: center;
-    margin-top: -14em;
+    margin-top: -13em;
 
     @media screen and (min-width: $desktop) {
         margin-top: -10em;
@@ -26,15 +26,6 @@
 
     // .best-sellers__description
     &__description {
-        max-width: 25em;
-
-        @media screen and (min-width: $tablet) {
-            max-width: 30em;
-        }
-
-        @media screen and (min-width: $desktop) {
-            max-width: 28em; // 700px
-        }
     }
 
     // .best-sellers__list

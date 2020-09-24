@@ -58,19 +58,19 @@
 
     // .best-tasty__title
     &__title {
-        margin-top: 3rem;
+        margin-top: 1em;
 
         @media screen and (min-width: $tablet) {
-            margin: 0 0 3rem;
-        }
-
-        @media screen and (min-width: $desktop) {
-            margin: 0 0 4rem;
+            margin-top: 0;
         }
     }
 
     // .best-tasty__description
     &__description {
+        @media screen and (min-width: $tablet) {
+            margin: 0;
+            width: auto;
+        }
     }
 
     // .best-tasty__action
