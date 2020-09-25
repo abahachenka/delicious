@@ -9,7 +9,7 @@
         background-size: 8%;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $l-desktop) {
         background-size: auto;
         background-position: 5% 25%, 98% 10%;
     }
