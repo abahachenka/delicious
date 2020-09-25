@@ -8,6 +8,29 @@
     background-size: 30%, 30%, contain;
     background-color: $white;
     text-align: center;
+    position: relative;
+
+    &:before {
+        @media screen and (min-width: $tablet) {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-image: url(../img/roll.png), 
+                url(../img/caviar.png),
+                url(../img/shrimp.png);
+            background-repeat: no-repeat;
+            background-position: 2% 15%, 98% 11%, 30% 87%;
+            background-size: 8%;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            background-size: auto;
+        }
+    }
 
     &__container {
         padding-bottom: 11em;

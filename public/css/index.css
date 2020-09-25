@@ -979,6 +979,27 @@ body.lock {
   background-size: 30%, 30%, contain;
   background-color: #ffffff;
   text-align: center;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .subscribe:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(../img/roll.png), url(../img/caviar.png), url(../img/shrimp.png);
+    background-repeat: no-repeat;
+    background-position: 2% 15%, 98% 11%, 30% 87%;
+    background-size: 8%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe:before {
+    background-size: auto;
+  }
 }
 .subscribe__container {
   padding-bottom: 11em;
