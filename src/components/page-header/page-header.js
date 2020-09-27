@@ -1,3 +1,5 @@
+import {TABLET_WIDTH} from '../../js/constants';
+
 /**
  * Initializes the top menu event handlers
  */
@@ -28,7 +30,7 @@ export function initHeaderMenu() {
 
     // close the menu when window leaves the mobile breakpoint
     $(window).resize(() => {
-        if ($(window).width() >= 768 ) {
+        if ($(window).width() >= TABLET_WIDTH ) {
             $pageHeaderMenu.removeClass('menu-active');
             $pageHeaderBurger.removeClass('menu__icon-active');
         }
