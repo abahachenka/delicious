@@ -21,7 +21,7 @@ export function initHeaderMenu() {
             && !$pageHeaderBurger.is(e.target)
             && !$pageHeaderMenu.is(e.target) // if the target of the click isn't the container...
             && $pageHeaderMenu.has(e.target).length === 0) {// ... nor a descendant of the container
-            
+
             $pageHeaderMenu.removeClass('menu-active');
             $pageHeaderBurger.removeClass('menu__icon-active');
             $body.removeClass('lock');
@@ -63,7 +63,7 @@ export function initHeaderSearch() {
         if ($searchContainer.hasClass(searchActiveClass)
             && !$searchContainer.is(e.target) // if the target of the click isn't the container...
             && $searchContainer.has(e.target).length === 0) {// ... nor a descendant of the container
-            
+
             $searchContainer.removeClass(searchActiveClass);
         }
     });

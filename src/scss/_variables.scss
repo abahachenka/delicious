@@ -1,13 +1,11 @@
 $fontFamiyDefault: 'Montserrat', sans-serif;
-$fontSizeDefault: 0.625em; // 10px for easy calculations
+$fontSizeDefault: 0.625rem; // 10px for easy calculations (10/16)
 
-
-$headerMaxWidth: 1375px;
-$contentMaxWidth: 1300px;
+$contentMaxWidth: 130rem; // 1300px
 
 
 // Paddings, margins
-$contentSpacing: 2em;
+$contentSpacing: 2rem;
 
 
 //Colors
@@ -17,27 +15,36 @@ $flory: #EE6D6D;
 $sand: #f4f4f4;
 $dusty-gray: #999999;
 $scorpion: #585858;
-$black: #111111;;
+$black: #111111;
 
 
 //Hamburger
-$burgerLineWidth: 0.3em;
+$burgerLineWidth: 0.4rem;
 
 
-// Breakpoints
-$mobile: 320px;
-$tablet: 768px;
-$desktop: 1024px;
-$l-desktop: 1200px;
+// Breakpoints, 1rem equals 16px
+$mobile: 20rem; // 320px
+$tablet: 48rem; // 768px
+$desktop: 64rem; // 1024px
+$l-desktop: 75rem; // 1200px
 
 
-// page-header__container
-$headerHeightMobile: 9em;
-$headerHeightTablet: 9em;
-$headerHeightDesktop: 10em;
-$headerHeightLargeDesktop: 13em;
+// page-header
+$headerHeightMobile: 9rem;
+$headerHeightTablet: 9rem;
+$headerHeightDesktop: 10rem;
+$headerHeightLargeDesktop: 13rem;
+
+$headerIconFontSizeMobile: 1.2rem;
+$headerIconFontSizeTablet: 0.9rem;
+$headerIconFontSizeDesktop: 1rem;
+$headerIconFontSizeLargeDesktop: 1.2rem;
+
+// End size depends on the font size
+$headerIconWidth: 2.5em;
+$headerIconHeight: 2.5em;
+$closeIconTop: 1.1em;
 
 
 // search
-$searchFieldHeight: 3.5rem;
 $searchFormHeight: 8rem;

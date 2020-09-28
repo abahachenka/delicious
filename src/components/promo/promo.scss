@@ -22,14 +22,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        padding-top: $headerHeightMobile + 3em;
+        padding-top: $headerHeightMobile + 3rem;
 
         @media screen and (min-width: $tablet) {
             padding-right: 45%;
         }
 
         @media screen and (min-width: $desktop) {
-            padding-top: $headerHeightDesktop + 8em;
+            padding-top: $headerHeightDesktop + 8rem;
         }
     }
 

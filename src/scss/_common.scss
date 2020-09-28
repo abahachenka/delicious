@@ -23,7 +23,6 @@ body {
 
 .wrapper {
     background: $apricot;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +30,6 @@ body {
 
 .page-content {
     flex: 1 1 auto;
-    min-height: 100vh;
 }
 
 .container {
@@ -125,12 +123,25 @@ body {
 }
 
 .form {
-    &__input,
-    &__submit {
+    width: 100%;
+    font-size: 1.6rem;
+    margin: $contentSpacing 0;
+
+    @media screen and (min-width: $tablet){
+        font-size: 1.6rem;
+    }
+
+    @media screen and (min-width: $desktop){
+        font-size: 1.8rem;
+    }
+
+    @media screen and (min-width: $l-desktop){
+        font-size: 2rem;
+    }
+
+    // .form-big
+    &-big {
         font-size: 1.6em;
-        border-radius: 1.875em; //30px
-        border: none;
-        height: 2.5em; // 40px
 
         @media screen and (min-width: $tablet){
             font-size: 2em;
@@ -143,6 +154,14 @@ body {
         @media screen and (min-width: $l-desktop){
             font-size: 2.5em;
         }
+    }
+
+    &__input,
+    &__submit {
+        font-size: 1em; // 16px
+        border-radius: 1.875em; // 30px
+        border: none;
+        height: 2.5em; // 40px
     }
 
     &__input {
@@ -172,7 +191,7 @@ body {
         position: relative;
 
         .form__input {
-            padding: 0.3em 9em 0.3em 0.9em;
+            padding: 0.3em 7.5em 0.3em 0.9em;
             width: 100%;
         }
 
@@ -180,6 +199,86 @@ body {
             position: absolute;
             top: 0;
             right: 0;
+        }
+    }
+}
+
+.search {
+
+    // .search__icon
+    &__icon {
+        position: relative;
+        font-size: 1em;
+        height: 2.5em;
+        width: 2.5em;
+        background: url(../img/search.png) center/100% no-repeat;
+        border: 0;
+        display: block;
+        z-index: 20;
+    }
+
+    &_active {
+        .search__icon {
+            background: none;
+
+            &:before,
+            &:after {
+                content: '';
+                background: $white;
+                display: block;
+                height: $burgerLineWidth;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: $closeIconTop;
+                transition: all 0.3s ease 0s;
+            }
+
+            &:before {
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    // .search__container
+    &__container {
+        position: absolute;
+        left: 0;
+        top: 8rem; // default value, should be assigned correct positioning
+        transition: all 0.3s ease 0s;
+        background: $white;
+        width: 100%;
+        max-height: 0;
+        padding: 0 $contentSpacing;
+        overflow: hidden;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: $tablet) {
+            right: 1rem;
+            left: auto;
+            width: 50%;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            width: 40%;
+        }
+    }
+
+    // .search_active
+    &_active {
+        .search__container {
+            max-height: 10rem;
+            box-shadow: 0 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+
+            @media screen and (min-width: $tablet) {
+                box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.2);
+            }
         }
     }
 }
