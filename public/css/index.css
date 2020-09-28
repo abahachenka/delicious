@@ -204,72 +204,6 @@ body.lock {
   right: 0;
 }
 
-.search__icon {
-  position: relative;
-  font-size: 1em;
-  height: 2.5em;
-  width: 2.5em;
-  background: url(../img/search.png) center/100% no-repeat;
-  border: 0;
-  display: block;
-  z-index: 20;
-}
-.search_active .search__icon {
-  background: none;
-}
-.search_active .search__icon:before, .search_active .search__icon:after {
-  content: "";
-  background: #ffffff;
-  display: block;
-  height: 0.4rem;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 1.1em;
-  transition: all 0.3s ease 0s;
-}
-.search_active .search__icon:before {
-  transform: rotate(45deg);
-}
-.search_active .search__icon:after {
-  transform: rotate(-45deg);
-}
-.search__container {
-  position: absolute;
-  left: 0;
-  top: 8rem;
-  transition: all 0.3s ease 0s;
-  background: #ffffff;
-  width: 100%;
-  max-height: 0;
-  padding: 0 2rem;
-  overflow: hidden;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-}
-@media screen and (min-width: 48rem) {
-  .search__container {
-    right: 1rem;
-    left: auto;
-    width: 50%;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .search__container {
-    width: 40%;
-  }
-}
-.search_active .search__container {
-  max-height: 10rem;
-  box-shadow: 0 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
-}
-@media screen and (min-width: 48rem) {
-  .search_active .search__container {
-    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.2);
-  }
-}
-
 .page-header {
   background-color: rgba(255, 127, 127, 0.85);
   position: fixed;
@@ -327,46 +261,6 @@ body.lock {
 }
 .page-header__menu-list {
   top: 9rem;
-}
-.page-header__search {
-  font-size: 1.2rem;
-}
-.page-header__search-icon {
-  height: 2.5em;
-  width: 2.5em;
-}
-@media screen and (min-width: 48rem) {
-  .page-header__search-icon {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .page-header__search-icon {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .page-header__search-icon {
-    font-size: 1.2rem;
-  }
-}
-.page-header__search-container {
-  top: 9rem;
-}
-@media screen and (min-width: 48rem) {
-  .page-header__search-container {
-    top: 10rem;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .page-header__search-container {
-    top: 11rem;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .page-header__search-container {
-    top: 14rem;
-  }
 }
 
 .logo {
@@ -493,6 +387,94 @@ body.lock {
   .menu__link {
     color: #ffffff;
     font-weight: bold;
+  }
+}
+
+.search__icon {
+  position: relative;
+  font-size: 1.2rem;
+  height: 2.5em;
+  width: 2.5em;
+  background: url(../img/search.png) center/100% no-repeat;
+  border: 0;
+  display: block;
+  z-index: 20;
+}
+@media screen and (min-width: 48rem) {
+  .search__icon {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .search__icon {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .search__icon {
+    font-size: 1.2rem;
+  }
+}
+.search_active .search__icon {
+  background: none;
+}
+.search_active .search__icon:before, .search_active .search__icon:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  height: 0.4rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 1.1em;
+  transition: all 0.3s ease 0s;
+}
+.search_active .search__icon:before {
+  transform: rotate(45deg);
+}
+.search_active .search__icon:after {
+  transform: rotate(-45deg);
+}
+.search__container {
+  position: absolute;
+  left: 0;
+  top: 9rem;
+  transition: all 0.3s ease 0s;
+  background: #ffffff;
+  width: 100%;
+  max-height: 0;
+  padding: 0 2rem;
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 48rem) {
+  .search__container {
+    top: 10rem;
+    right: 1rem;
+    left: auto;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .search__container {
+    top: 11rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .search__container {
+    width: 40%;
+    top: 14rem;
+  }
+}
+.search_active .search__container {
+  max-height: 10rem;
+  box-shadow: 0 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 48rem) {
+  .search_active .search__container {
+    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.2);
   }
 }
 
