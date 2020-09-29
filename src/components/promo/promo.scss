@@ -1,35 +1,43 @@
 .promo {
-    background: $apricot url(../img/promo-bg.png) center/cover no-repeat;
-    padding-bottom: 20em;
+     background-image: url(../img/promo-bg-wave.png), url(../img/bg.jpg);
 
-    @media screen and (min-width: $tablet) {
-        padding-bottom: 29em;
-    }
-
-    @media screen and (min-width: $desktop) {
-        padding-bottom: 32em;
-    }
-
-    @media screen and (min-width: $l-desktop) {
-        padding-bottom: 35em;
-    }
+    background-position: 0 100%, center;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
 
     // .promo__container
     &__container {
+        padding-top: 0;
+        padding-bottom: 30vw; // need scalable padding because of the scalable bg
+
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 23vw;
+        }
+    }
+
+    // .promo__body
+    &__body {
         min-height: 100vh;
         color: $white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        padding-top: $headerHeightMobile + 3rem;
+        padding-top: $headerHeightMobile;
+        max-width: 50rem;
 
         @media screen and (min-width: $tablet) {
-            padding-right: 45%;
+            width: 55%;
+            padding-top: $headerHeightTablet;
+            max-width: none;
         }
 
         @media screen and (min-width: $desktop) {
-            padding-top: $headerHeightDesktop + 8rem;
+            padding-top: $headerHeightDesktop;
+        }
+
+        @media screen and (min-width: $l-desktop) {
+            padding-top: $headerHeightLargeDesktop;
         }
     }
 
@@ -37,8 +45,8 @@
     &__title {
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 4em;
-        margin: 0 0 0.7em;
+        font-size: 3.2em;
+        margin: 0 0 0.5em;
         line-height: 1.3;
 
         @media screen and (min-width: $tablet) {
@@ -57,12 +65,12 @@
 
     // .promo__description
     &__description {
-        font-size: 2em;
+        font-size: 1.6em;
         line-height: 1.5;
-        margin: 0 0 2em;
+        margin: 0 0 1.5em;
 
         @media screen and (min-width: $tablet) {
-            font-size: 2.2em; // 22px
+            font-size: 2em; // 20px
         }
 
         @media screen and (min-width: $desktop) {
@@ -76,7 +84,5 @@
     }
 
     // .promo__action
-    &__action {
-        // max-width: 28rem; ///????
-    }
+    &__action {}
 }

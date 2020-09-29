@@ -36,21 +36,21 @@ body.lock {
 .container {
   margin: auto;
   max-width: 130rem;
-  padding: 6em 2rem;
+  padding: 6rem 2rem;
 }
 @media screen and (min-width: 48rem) {
   .container {
-    padding: 8em 2rem;
+    padding: 8rem 2rem;
   }
 }
 @media screen and (min-width: 64rem) {
   .container {
-    padding: 11em 2rem;
+    padding: 11rem 2rem;
   }
 }
 @media screen and (min-width: 75rem) {
   .container {
-    padding: 14em 2rem;
+    padding: 14rem 2rem;
   }
 }
 
@@ -59,21 +59,26 @@ body.lock {
   padding: 0.75em 2em;
   color: #ff7f7f;
   background: #ffffff;
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 3.3rem;
+  border-radius: 3.3em;
   text-align: center;
 }
-.action-btn:hover {
-  background: #ff7f7f;
-  color: #ffffff;
+@media screen and (min-width: 48rem) {
+  .action-btn {
+    font-size: 2.2em;
+  }
 }
 @media screen and (min-width: 64rem) {
   .action-btn {
     font-size: 2.5em;
   }
+}
+.action-btn:hover {
+  background: #ff7f7f;
+  color: #ffffff;
 }
 .action-btn_red {
   background: #ff7f7f;
@@ -479,48 +484,52 @@ body.lock {
 }
 
 .promo {
-  background: #ff7f7f url(../img/promo-bg.png) center/cover no-repeat;
-  padding-bottom: 20em;
-}
-@media screen and (min-width: 48rem) {
-  .promo {
-    padding-bottom: 29em;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .promo {
-    padding-bottom: 32em;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .promo {
-    padding-bottom: 35em;
-  }
+  background-image: url(../img/promo-bg-wave.png), url(../img/bg.jpg);
+  background-position: 0 100%, center;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
 }
 .promo__container {
+  padding-top: 0;
+  padding-bottom: 30vw;
+}
+@media screen and (min-width: 48rem) {
+  .promo__container {
+    padding-bottom: 23vw;
+  }
+}
+.promo__body {
   min-height: 100vh;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding-top: 12rem;
+  padding-top: 9rem;
+  max-width: 50rem;
 }
 @media screen and (min-width: 48rem) {
-  .promo__container {
-    padding-right: 45%;
+  .promo__body {
+    width: 55%;
+    padding-top: 9rem;
+    max-width: none;
   }
 }
 @media screen and (min-width: 64rem) {
-  .promo__container {
-    padding-top: 18rem;
+  .promo__body {
+    padding-top: 10rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .promo__body {
+    padding-top: 13rem;
   }
 }
 .promo__title {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 4em;
-  margin: 0 0 0.7em;
+  font-size: 3.2em;
+  margin: 0 0 0.5em;
   line-height: 1.3;
 }
 @media screen and (min-width: 48rem) {
@@ -540,13 +549,13 @@ body.lock {
   }
 }
 .promo__description {
-  font-size: 2em;
+  font-size: 1.6em;
   line-height: 1.5;
-  margin: 0 0 2em;
+  margin: 0 0 1.5em;
 }
 @media screen and (min-width: 48rem) {
   .promo__description {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 64rem) {
@@ -563,11 +572,9 @@ body.lock {
 .best-sellers {
   color: #ffffff;
   text-align: center;
-  margin-top: -13em;
 }
 @media screen and (min-width: 64rem) {
   .best-sellers {
-    margin-top: -10em;
     background-image: url(../img/rice.png), url(../img/caviar.png);
     background-repeat: no-repeat;
     background-position: 0 30%, 99% 22%;
