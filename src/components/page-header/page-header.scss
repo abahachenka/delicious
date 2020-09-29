@@ -6,7 +6,7 @@
     left: 0;
     z-index: 200;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
         position: absolute;
     }
 
@@ -16,19 +16,15 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 $contentSpacing;
-        height: $headerHeightMobile;
+        height: $headerSmallHeight;
         position: relative;
 
         @media screen and (min-width: $tablet) {
-            height: $headerHeightTablet;
+            height: $headerMediumHeight;
         }
 
         @media screen and (min-width: $desktop) {
-            height: $headerHeightDesktop;
-        }
-
-        @media screen and (min-width: $l-desktop) {
-            height: $headerHeightLargeDesktop;
+            height: $headerLargeHeight;
         }
     }
 
@@ -39,16 +35,16 @@
         align-items: center;
         justify-content: space-between;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $desktop) {
             flex-direction: row;
         }
     }
 
     // .page-header__menu
     &__menu {
-        margin-left: 2.5em;
+        margin-left: 3em;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $desktop) {
             margin-left: 0;
         }
     }
@@ -58,10 +54,13 @@
 
     // .page-header__menu-list
     &__menu-list {
-        top: $headerHeightMobile;
+        top: $headerSmallHeight;
+
+         @media screen and (min-width: $tablet) {
+            top: $headerMediumHeight;
+         }
     }
 }
-
 
 .logo {
     display: inline-block;
@@ -76,7 +75,7 @@
 
     // .menu__icon (burger)
     &__icon {
-        font-size: $headerIconFontSizeMobile;
+        font-size: $headerIconFontSizeMedium;
         width: $headerIconWidth;
         height: $headerIconHeight;
         position: relative;
@@ -131,6 +130,10 @@
         }
 
         @media screen and (min-width: $tablet) {
+            font-size: $headerIconFontSizeBig;
+        }
+
+        @media screen and (min-width: $desktop) {
             display: none;
         }
     }
@@ -148,7 +151,7 @@
         overflow: hidden;
         list-style: none;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $desktop) {
             transition: none;
             position: absolute;
             width: 100%;
@@ -171,12 +174,12 @@
     }
 
     &__item {
-        font-size: 2.4em;
-        margin: 1em 0; // 24px
+        font-size: 2.5em;
+        margin: 1em 0; // 25px
 
-        @media screen and (min-width: $tablet) {
-            margin: 0 1.2em 0 0; // 24px
+        @media screen and (min-width: $desktop) {
             font-size: 2em;
+            margin: 0 1.2em 0 0; // 24px
 
             &:last-child {
                 margin-right: 0;
@@ -184,8 +187,8 @@
         }
 
         @media screen and (min-width: $desktop) {
-            margin-right: 1.36em; // 30px
             font-size: 2.2em;
+            margin-right: 1.36em; // 30px
         }
 
         @media screen and (min-width: $l-desktop) {
@@ -205,7 +208,7 @@
             text-decoration: underline;
         }
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $desktop) {
             color: $white;
             font-weight: bold;
         }
@@ -217,7 +220,7 @@
     // .search__icon
     &__icon {
         position: relative;
-        font-size: $headerIconFontSizeMobile;
+        font-size: $headerIconFontSizeMedium;
         height: $headerIconWidth;
         width: $headerIconHeight;
         background: url(../img/search.png) center/100% no-repeat;
@@ -226,15 +229,11 @@
         z-index: 20;
 
         @media screen and (min-width: $tablet) {
-            font-size: $headerIconFontSizeTablet;
+            font-size: $headerIconFontSizeBig;
         }
 
         @media screen and (min-width: $desktop) {
-            font-size: $headerIconFontSizeDesktop;
-        }
-
-        @media screen and (min-width: $l-desktop) {
-            font-size: $headerIconFontSizeLargeDesktop;
+            font-size: $headerIconFontSizeSmall;
         }
     }
 
@@ -270,7 +269,7 @@
     &__container {
         position: absolute;
         left: 0;
-        top: $headerHeightMobile;
+        top: $headerSmallHeight;
         transition: all 0.3s ease 0s;
         background: $white;
         width: 100%;
@@ -282,19 +281,18 @@
         align-items: center;
 
         @media screen and (min-width: $tablet) {
-            top: $headerHeightTablet + 1rem;
+            top: $headerMediumHeight + 1rem;
             right: 1rem;
             left: auto;
             width: 50%;
         }
 
         @media screen and (min-width: $desktop) {
-            top: $headerHeightDesktop + 1rem;
+            top: $headerLargeHeight + 1rem;
         }
 
         @media screen and (min-width: $l-desktop) {
             width: 40%;
-            top: $headerHeightLargeDesktop + 1rem;
         }
     }
 

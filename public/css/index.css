@@ -217,7 +217,7 @@ body.lock {
   left: 0;
   z-index: 200;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 64rem) {
   .page-header {
     position: absolute;
   }
@@ -232,15 +232,10 @@ body.lock {
 }
 @media screen and (min-width: 48rem) {
   .page-header__row {
-    height: 9rem;
+    height: 11rem;
   }
 }
 @media screen and (min-width: 64rem) {
-  .page-header__row {
-    height: 10rem;
-  }
-}
-@media screen and (min-width: 75rem) {
   .page-header__row {
     height: 13rem;
   }
@@ -251,21 +246,26 @@ body.lock {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 64rem) {
   .page-header__col-right {
     flex-direction: row;
   }
 }
 .page-header__menu {
-  margin-left: 2.5em;
+  margin-left: 3em;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 64rem) {
   .page-header__menu {
     margin-left: 0;
   }
 }
 .page-header__menu-list {
   top: 9rem;
+}
+@media screen and (min-width: 48rem) {
+  .page-header__menu-list {
+    top: 11rem;
+  }
 }
 
 .logo {
@@ -277,7 +277,7 @@ body.lock {
 }
 
 .menu__icon {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   width: 2.5em;
   height: 2.5em;
   position: relative;
@@ -321,6 +321,11 @@ body.lock {
 }
 @media screen and (min-width: 48rem) {
   .menu__icon {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .menu__icon {
     display: none;
   }
 }
@@ -336,7 +341,7 @@ body.lock {
   overflow: hidden;
   list-style: none;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 64rem) {
   .menu__list {
     transition: none;
     position: absolute;
@@ -355,13 +360,13 @@ body.lock {
   height: 100%;
 }
 .menu__item {
-  font-size: 2.4em;
+  font-size: 2.5em;
   margin: 1em 0;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 64rem) {
   .menu__item {
-    margin: 0 1.2em 0 0;
     font-size: 2em;
+    margin: 0 1.2em 0 0;
   }
   .menu__item:last-child {
     margin-right: 0;
@@ -369,8 +374,8 @@ body.lock {
 }
 @media screen and (min-width: 64rem) {
   .menu__item {
-    margin-right: 1.36em;
     font-size: 2.2em;
+    margin-right: 1.36em;
   }
 }
 @media screen and (min-width: 75rem) {
@@ -388,7 +393,7 @@ body.lock {
 .menu__link:hover {
   text-decoration: underline;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 64rem) {
   .menu__link {
     color: #ffffff;
     font-weight: bold;
@@ -397,7 +402,7 @@ body.lock {
 
 .search__icon {
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   height: 2.5em;
   width: 2.5em;
   background: url(../img/search.png) center/100% no-repeat;
@@ -407,15 +412,10 @@ body.lock {
 }
 @media screen and (min-width: 48rem) {
   .search__icon {
-    font-size: 0.9rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 64rem) {
-  .search__icon {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 75rem) {
   .search__icon {
     font-size: 1.2rem;
   }
@@ -456,7 +456,7 @@ body.lock {
 }
 @media screen and (min-width: 48rem) {
   .search__container {
-    top: 10rem;
+    top: 12rem;
     right: 1rem;
     left: auto;
     width: 50%;
@@ -464,13 +464,12 @@ body.lock {
 }
 @media screen and (min-width: 64rem) {
   .search__container {
-    top: 11rem;
+    top: 14rem;
   }
 }
 @media screen and (min-width: 75rem) {
   .search__container {
     width: 40%;
-    top: 14rem;
   }
 }
 .search_active .search__container {
@@ -511,24 +510,14 @@ body.lock {
 @media screen and (min-width: 48rem) {
   .promo__body {
     width: 55%;
-    padding-top: 9rem;
-    max-width: none;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .promo__body {
-    padding-top: 10rem;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .promo__body {
     padding-top: 13rem;
+    max-width: none;
   }
 }
 .promo__title {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 3.2em;
+  font-size: 3.6em;
   margin: 0 0 0.5em;
   line-height: 1.3;
 }

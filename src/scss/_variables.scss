@@ -31,15 +31,13 @@ $l-desktop: 75rem; // 1200px
 
 
 // page-header
-$headerHeightMobile: 9rem;
-$headerHeightTablet: 9rem;
-$headerHeightDesktop: 10rem;
-$headerHeightLargeDesktop: 13rem;
+$headerSmallHeight: 9rem;
+$headerMediumHeight: 11rem;
+$headerLargeHeight: 13rem;
 
-$headerIconFontSizeMobile: 1.2rem;
-$headerIconFontSizeTablet: 0.9rem;
-$headerIconFontSizeDesktop: 1rem;
-$headerIconFontSizeLargeDesktop: 1.2rem;
+$headerIconFontSizeSmall: 1.2rem;
+$headerIconFontSizeMedium: 1.3rem;
+$headerIconFontSizeBig: 1.6rem;
 
 
 // End size depends on the font size

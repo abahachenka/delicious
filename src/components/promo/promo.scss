@@ -23,21 +23,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        padding-top: $headerHeightMobile;
+        padding-top: $headerSmallHeight;
         max-width: 50rem;
 
         @media screen and (min-width: $tablet) {
             width: 55%;
-            padding-top: $headerHeightTablet;
+            padding-top: $headerLargeHeight;
             max-width: none;
-        }
-
-        @media screen and (min-width: $desktop) {
-            padding-top: $headerHeightDesktop;
-        }
-
-        @media screen and (min-width: $l-desktop) {
-            padding-top: $headerHeightLargeDesktop;
         }
     }
 
@@ -45,7 +37,7 @@
     &__title {
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 3.2em;
+        font-size: 3.6em;
         margin: 0 0 0.5em;
         line-height: 1.3;
 
