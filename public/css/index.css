@@ -341,12 +341,19 @@ body.lock {
   overflow: hidden;
   list-style: none;
 }
+@media screen and (min-width: 48rem) {
+  .menu__list {
+    height: auto;
+    max-height: 0;
+  }
+}
 @media screen and (min-width: 64rem) {
   .menu__list {
     transition: none;
     position: absolute;
     width: 100%;
     height: auto;
+    max-height: none;
     top: 50%;
     transform: translate(0, -50%);
     z-index: 10;
@@ -358,6 +365,12 @@ body.lock {
 }
 .menu-active .menu__list {
   height: 100%;
+}
+@media screen and (min-width: 48rem) {
+  .menu-active .menu__list {
+    max-height: 100%;
+    height: auto;
+  }
 }
 .menu__item {
   font-size: 2.5em;
@@ -510,8 +523,14 @@ body.lock {
 @media screen and (min-width: 48rem) {
   .promo__body {
     width: 55%;
-    padding-top: 13rem;
+    padding-top: 11rem;
     max-width: none;
+    min-height: 100vmin;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .promo__body {
+    padding-top: 13rem;
   }
 }
 .promo__title {
@@ -558,6 +577,7 @@ body.lock {
     margin: 0 0 1.5em;
   }
 }
+
 .best-sellers {
   color: #ffffff;
   text-align: center;

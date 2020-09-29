@@ -1,6 +1,5 @@
 .promo {
-     background-image: url(../img/promo-bg-wave.png), url(../img/bg.jpg);
-
+    background-image: url(../img/promo-bg-wave.png), url(../img/bg.jpg);
     background-position: 0 100%, center;
     background-size: contain, cover;
     background-repeat: no-repeat;
@@ -28,8 +27,13 @@
 
         @media screen and (min-width: $tablet) {
             width: 55%;
-            padding-top: $headerLargeHeight;
+            padding-top: $headerMediumHeight;
             max-width: none;
+            min-height: 100vmin; // to prevent the section being unnecessary too long
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding-top: $headerLargeHeight;
         }
     }
 
@@ -38,7 +42,7 @@
         font-weight: bold;
         text-transform: uppercase;
         font-size: 3.6em;
-        margin: 0 0 0.5em;
+        margin: 0 0 0.5em; //18px
         line-height: 1.3;
 
         @media screen and (min-width: $tablet) {
@@ -51,7 +55,7 @@
 
         @media screen and (min-width: $l-desktop) {
             font-size: 7.5em; // 75px
-            margin: 0 0 0.4em;
+            margin: 0 0 0.4em; // 30px
         }
     }
 
@@ -59,7 +63,7 @@
     &__description {
         font-size: 1.6em;
         line-height: 1.5;
-        margin: 0 0 1.5em;
+        margin: 0 0 1.5em; // 24px
 
         @media screen and (min-width: $tablet) {
             font-size: 2em; // 20px
@@ -74,7 +78,4 @@
             margin: 0 0 1.5em; // 45px
         }
     }
-
-    // .promo__action
-    &__action {}
 }
