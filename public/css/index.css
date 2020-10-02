@@ -715,23 +715,18 @@ body.lock {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 11em;
+  padding-bottom: 25vw;
 }
 @media screen and (min-width: 48rem) {
   .best-tasty__container {
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 14em;
+    padding-bottom: 20vw;
   }
 }
 @media screen and (min-width: 64rem) {
   .best-tasty__container {
-    padding-bottom: 16em;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .best-tasty__container {
-    padding-bottom: 18em;
+    padding-bottom: 17vw;
   }
 }
 .best-tasty__pic, .best-tasty__content {
@@ -740,18 +735,18 @@ body.lock {
 }
 .best-tasty__pic img {
   width: 75%;
-  max-width: 22em;
+  max-width: 22rem;
 }
 @media screen and (min-width: 48rem) {
   .best-tasty__pic img {
     width: 100%;
-    max-width: 46.5em;
+    max-width: 46.5rem;
   }
 }
 @media screen and (min-width: 48rem) {
   .best-tasty__content {
     text-align: left;
-    padding-left: 3em;
+    padding-left: 3rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -773,16 +768,11 @@ body.lock {
   }
 }
 .best-tasty__action {
-  margin-top: 3rem;
+  margin-top: 1em;
 }
 @media screen and (min-width: 48rem) {
   .best-tasty__action {
-    margin-top: 4rem;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .best-tasty__action {
-    margin-top: 5rem;
+    margin-top: 1.8em;
   }
 }
 
