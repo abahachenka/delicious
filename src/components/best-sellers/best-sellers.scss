@@ -1,19 +1,26 @@
 .best-sellers {
     color: $white;
     text-align: center;
-    // margin-top: -13em;
+    padding-top: 11rem;
+    margin-top: -20vw; // the combination of padding and negative margin 
+                       // allows to smoothly move the block up as the viewport expands
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 12rem;
+    }
 
     @media screen and (min-width: $desktop) {
-        // margin-top: -10em;
         background-image: url(../img/rice.png), url(../img/caviar.png);
         background-repeat: no-repeat;
-        background-position: 0 30%, 99% 22%;
+        background-position: 0 45%, 98% 40%;
         background-size: 8%;
+        padding-top: 16rem;
     }
 
     @media screen and (min-width: $l-desktop) {
         background-size: auto;
-        background-position: 0 35%, 99% 25%;
+        background-position: 0 55%, 99% 45%;
+        padding-top: 17rem;
     }
 
     // .best-sellers__container
@@ -22,7 +29,11 @@
     }
 
     // .best-sellers__title
-    &__title {}
+    &__title {
+        @media screen and (min-width: $tablet) {
+            padding-left: 0.5em; // makes the title looking visually better
+        }
+    }
 
     // .best-sellers__description
     &__description {
@@ -30,8 +41,14 @@
 
     // .best-sellers__list
     &__list {
+        margin: 2rem auto 0;
+
+        @media screen and (min-width: $tablet) {
+            margin: 3rem auto 0;
+        }
+
         @media screen and (min-width: $desktop) {
-            margin-top: 8em;
+            margin: 8rem auto 0;
         }
     }
 }
@@ -39,7 +56,6 @@
 .product-list {
     list-style: none;
     padding: 0;
-    margin: 2em auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,18 +63,13 @@
     @media screen and (min-width: $tablet) {
         flex-direction: row;
         justify-content: center;
-        margin: 3em auto 0;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin: 5em auto 0;
     }
 
     // .product-list__column
     &__column {
         text-align: center;
-        max-width: 30em; // 300px
-        margin: 0 0 2em; // 20px
+        max-width: 30rem;
+        margin: 0 0 2rem;
 
         &:last-child {
             margin: 0;
@@ -88,8 +99,8 @@
 
     // .product-list__item-name
     &__item-name {
-        font-size: 1.8em;
-        margin: -0.5em 0 1em;
+        font-size: 1.8em; // 18px
+        margin: -0.5em 0 1em; // - 9px 0 18px
 
         @media screen and (min-width: $tablet) {
             font-size: 2.3em; // 23px
@@ -97,7 +108,7 @@
         }
 
         @media screen and (min-width: $desktop) {
-            font-size: 2.8em;
+            font-size: 2.8em; //28px
         }
     }
 
@@ -113,16 +124,16 @@
 
     // .product-list__item-description
     &__item-description {
-        font-size: 1.2em;
+        font-size: 1.2em; //12px
         line-height: 1.5;
-        margin: 1em 0 0;
+        margin: 1em 0 0; // 12px
 
         @media screen and (min-width: $tablet) {
-            font-size: 1.5em;
+            font-size: 1.5em; // 15px
         }
 
         @media screen and (min-width: $desktop) {
-            font-size: 1.7em;
+            font-size: 1.7em; //17px
         }
     }
 }
