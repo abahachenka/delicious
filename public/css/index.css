@@ -55,16 +55,18 @@ body.lock {
 }
 
 .action-btn {
-  display: inline-block;
-  padding: 0.75em 2em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
   color: #ff7f7f;
   background: #ffffff;
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  height: 2.5em;
   border-radius: 3.3em;
-  text-align: center;
 }
 @media screen and (min-width: 48rem) {
   .action-btn {
@@ -135,44 +137,22 @@ body.lock {
 
 .form {
   width: 100%;
-  font-size: 1.6rem;
   margin: 2rem 0;
+  font-size: 2em;
 }
 @media screen and (min-width: 48rem) {
   .form {
-    font-size: 1.6rem;
+    font-size: 2.2em;
   }
 }
 @media screen and (min-width: 64rem) {
   .form {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .form {
-    font-size: 2rem;
-  }
-}
-.form-big {
-  font-size: 1.6em;
-}
-@media screen and (min-width: 48rem) {
-  .form-big {
-    font-size: 2em;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .form-big {
-    font-size: 2.3em;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .form-big {
     font-size: 2.5em;
   }
 }
 .form__input, .form__submit {
   font-size: 1em;
+  font-family: "Montserrat", sans-serif;
   border-radius: 1.875em;
   border: none;
   height: 2.5em;
@@ -185,9 +165,10 @@ body.lock {
   box-shadow: 0 0 0.3em #ff7f7f;
 }
 .form__submit {
-  padding: 0.125em 1.5em 0;
+  padding: 0.125em 1.06em 0;
   background: #ff7f7f;
   text-transform: uppercase;
+  font-weight: bold;
   color: #ffffff;
   line-height: 1;
   vertical-align: middle;
@@ -199,11 +180,11 @@ body.lock {
 .form_single-field {
   position: relative;
 }
-.form_single-field .form__input {
-  padding: 0.3em 7.5em 0.3em 0.9em;
+.form__input_single {
+  padding: 0.3em 8.3em 0.3em 0.9em;
   width: 100%;
 }
-.form_single-field .form__submit {
+.form__submit_single {
   position: absolute;
   top: 0;
   right: 0;
@@ -472,7 +453,7 @@ body.lock {
     top: 12rem;
     right: 1rem;
     left: auto;
-    width: 50%;
+    width: 60%;
   }
 }
 @media screen and (min-width: 64rem) {
@@ -482,8 +463,11 @@ body.lock {
 }
 @media screen and (min-width: 75rem) {
   .search__container {
-    width: 40%;
+    width: 50%;
   }
+}
+.search__input {
+  padding-right: 6.5em;
 }
 .search_active .search__container {
   max-height: 10rem;
@@ -1081,42 +1065,32 @@ body.lock {
   }
 }
 .subscribe__container {
-  padding-bottom: 11em;
+  padding-bottom: 27vw;
 }
 @media screen and (min-width: 48rem) {
   .subscribe__container {
-    padding-bottom: 18em;
-  }
-}
-@media screen and (min-width: 64rem) {
-  .subscribe__container {
-    padding-bottom: 22em;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .subscribe__container {
-    padding-bottom: 30em;
+    padding-bottom: 23vw;
   }
 }
 .subscribe__form {
-  margin: 3em auto 0;
-  max-width: 40em;
+  font-size: 1.6em;
+  margin: 2.2em auto 0;
+  max-width: 50rem;
 }
 @media screen and (min-width: 48rem) {
   .subscribe__form {
-    margin-top: 5em;
-    max-width: 50em;
+    font-size: 2.2em;
   }
 }
 @media screen and (min-width: 64rem) {
   .subscribe__form {
-    max-width: 60em;
+    max-width: 65rem;
+    font-size: 2.5em;
   }
 }
 @media screen and (min-width: 75rem) {
   .subscribe__form {
-    margin-top: 6em;
-    max-width: 66em;
+    max-width: 77rem;
   }
 }
 

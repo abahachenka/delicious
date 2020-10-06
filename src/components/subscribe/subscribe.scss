@@ -33,37 +33,29 @@
     }
 
     &__container {
-        padding-bottom: 11em;
+        padding-bottom: 27vw;
 
         @media screen and (min-width: $tablet) {
-            padding-bottom: 18em;
-        }
-
-        @media screen and (min-width: $desktop) {
-            padding-bottom: 22em;
-        }
-
-        @media screen and (min-width: $l-desktop) {
-            padding-bottom: 30em;
+            padding-bottom: 23vw;
         }
     }
 
     &__form {
-        margin: 3em auto 0;
-        max-width: 40em;
+        font-size: 1.6em;
+        margin: 2.2em auto 0;
+        max-width: 50rem;
 
         @media screen and (min-width: $tablet) {
-            margin-top: 5em;
-            max-width: 50em;
+            font-size: $actionBtnFontTablet;
         }
 
         @media screen and (min-width: $desktop) {
-            max-width: 60em;
+            max-width: 65rem;
+            font-size: $actionBtnFontDesktop;
         }
 
         @media screen and (min-width: $l-desktop) {
-            margin-top: 6em;
-            max-width: 66em;
+            max-width: 77rem;
         }
     }
 }

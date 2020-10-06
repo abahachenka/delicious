@@ -295,7 +295,7 @@
             top: $headerMediumHeight + 1rem;
             right: 1rem;
             left: auto;
-            width: 50%;
+            width: 60%;
         }
 
         @media screen and (min-width: $desktop) {
@@ -303,8 +303,12 @@
         }
 
         @media screen and (min-width: $l-desktop) {
-            width: 40%;
+            width: 50%;
         }
+    }
+
+    &__input {
+        padding-right: 6.5em;
     }
 
     // .search_active
