@@ -953,12 +953,6 @@ body.lock {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 64rem) {
-  .delicious__container {
-    padding-top: 12em;
-    padding-bottom: 10em;
-  }
-}
 .delicious__pic, .delicious__content {
   flex-basis: 50%;
   text-align: center;
